@@ -1,0 +1,11 @@
+.option{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.option h4{
+    font-size: 20px;
+    font-weight: bolder;
+}

@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-start-rgb: #000f16;
+  --background-end-rgb: #002435;
+  --text: #e5fffb;
+  --text-hover: rgb(34, 133, 153);
+  --background: #000f16;
+  --primary: #03cad1;
+  --shadow: #00d8c6;
+}
+
+/* Font */
+@font-face {
+  font-family: "Anonymous_Pro";
+  src: url("/fonts/Anonymous_Pro/AnonymousPro-Regular.ttf") format("truetype");
+}
+
+
+/* Basic settings for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Anonymous_Pro';
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+
+
+body {
+  color: var(--text);
+  background: var(--background-start-rgb);
+}
+
+/* Basic Styles Start */
+button {
+  cursor: pointer;
+  background: none;
+  color: var(--text);
+  border-end-end-radius: 15px;
+  border-start-start-radius: 15px;
+  background: rgba(18, 116, 135, 0.5);
+  box-shadow: 0px 10px 90px 30px rgba(18, 116, 135, 0.4);
+  padding: 15px 35px;
+  text-shadow: 2px 2px 25px var(--primary);
+  font-size: 20px;
+  font-weight: bold;
+}
+button:hover {
+  background: rgba(18, 115, 135, 0.644);
+}
+
+.button-a {
+  cursor: pointer;
+  background: none;
+  color: var(--text);
+  border-end-end-radius: 15px;
+  border-start-start-radius: 15px;
+  background: rgba(18, 116, 135, 0.5);
+  box-shadow: 0px 10px 90px 30px rgba(18, 116, 135, 0.4);
+  padding: 15px 35px;
+  text-shadow: 2px 2px 25px var(--primary);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.button-a:hover {
+  background: rgba(18, 115, 135, 0.644);
+}
+
+header {
+  background: linear-gradient(to bottom, transparent, var(--background-end-rgb))
+    var(--background-start-rgb);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+/* Gradient */
+.gradient-text {
+  text-shadow: 1px 1px 15px rgba(18, 116, 135, 1);
+  background: linear-gradient(89.97deg, #00b5e2 1.84%, #99d6d1 102.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text-A {
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 21px;
+}
+/* Basic Styles End */
+
+/* Nav Start */
+.nav {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(18, 116, 135, 0.6);
+  box-shadow: 0px 10px 90px 30px rgba(18, 116, 135, 0.55);
+  padding: 0px 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
+
+.nav-links {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: var(--text-hover);
+  transform: scale(1.2);
+}
+
+/* Nav End */
+
+.stem-logo {
+  margin: -70px 0 -40px 0;
+  font-size: 200px;
+  letter-spacing: -14px;
+  font-family: "Anonymous_Pro";
+  text-shadow: 1px 1px 15px rgba(18, 116, 135, 1);
+  background: linear-gradient(89.97deg, #00b5e2 1.84%, #99d6d1 102.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
