@@ -2,6 +2,7 @@ import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,10 +26,10 @@ export default function RootLayout({
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           crossOrigin="anonymous"
         />
-        <script
+        <Script
           src="https://kit.fontawesome.com/74e5b95d58.js"
           crossOrigin="anonymous"
-        ></script>
+        ></Script>
         {/* <!-- Font Awesome --end */}
         {/* Icon */}
         <link rel="icon" href="/logo.svg" type="image/x-icon" />
