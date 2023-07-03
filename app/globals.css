@@ -8,8 +8,9 @@
   --text: #e5fffb;
   --text-hover: rgb(34, 133, 153);
   --background: #000f16;
-  --primary: #03cad1;
-  --shadow: #00d8c6;
+  --primary: #002435;
+  --secondary: #003449;
+  --shadow: rgba(18, 116, 135, 0.4);
 }
 
 /* Font */
@@ -17,6 +18,30 @@
   font-family: "Anonymous_Pro";
   src: url("/fonts/Anonymous_Pro/AnonymousPro-Regular.ttf") format("truetype");
 }
+
+
+/* ScrollBar -start */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-hover) transparent;
+  border-radius: 15px;
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--text-hover);
+  border-radius: 15px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+/* ScrollBar --end */
 
 
 /* Basic settings for all elements */
@@ -43,7 +68,7 @@ button {
   border-end-end-radius: 15px;
   border-start-start-radius: 15px;
   background: rgba(18, 116, 135, 0.5);
-  box-shadow: 0px 10px 90px 30px rgba(18, 116, 135, 0.4);
+  box-shadow: 0px 10px 90px 30px var(--shadow);
   padding: 15px 35px;
   text-shadow: 2px 2px 25px var(--primary);
   font-size: 20px;
@@ -51,6 +76,21 @@ button {
 }
 button:hover {
   background: rgba(18, 115, 135, 0.644);
+}
+
+textarea{
+  background: var(--primary);
+  border-radius: 25px;
+  resize: none;
+  padding: 30px;
+}
+
+textarea::placeholder{
+  color: var(--text-hover);
+}
+
+textarea:focus{
+  background: var(--secondary);
 }
 
 .button-a {
@@ -136,6 +176,16 @@ header {
   color: var(--text-hover);
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 991.5px) {
+  .nav{
+    top: auto;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 
 /* Nav End */
 

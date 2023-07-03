@@ -1,11 +1,15 @@
-import Image from "next/image";
-import Link from "next/link";
-// import styles from "./home.module.css";
+import styles from "./prompt.module.css";
 
 export default function Prompt() {
   return (
-    <header>
-      <h1>Prompt</h1>
+    <header className={styles.header}>
+      <h1 className={styles.heading}>Prompt</h1>
+      <textarea
+        name="prompts"
+        id="prompts"
+        placeholder="What do you have to find?"
+      ></textarea>
+      <button>Proceed</button>
     </header>
   );
 }
