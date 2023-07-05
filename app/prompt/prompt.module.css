@@ -21,3 +21,8 @@
     margin-top: 25px;
     width: 100%;
 }
+
+.header p{
+    margin-top: 15px;
+    z-index: 1;
+}

@@ -41,6 +41,20 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
   background: var(--secondary);
 }
+
+*::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--text-hover);
+  border-radius: 15px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
 /* ScrollBar --end */
 
 
