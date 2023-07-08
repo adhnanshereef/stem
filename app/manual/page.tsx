@@ -33,6 +33,17 @@ export default function Manual() {
         <button className={styles.manual}>
           Physics <i className="fa-solid fa-caret-down"></i>
         </button>
+
+        {/* Chemistry --start */}
+        <button onClick={(e) => showSubManuals("chemistry")} className={styles.manual}>
+          Chemistry <i className="fa-solid fa-caret-down"></i>
+        </button>
+        <div id="chemistry" className={styles.subManuals}>
+          <Link href="/manual/s/chemistry/electronic-configuration" className="button-a">
+            Electronic Configuration
+          </Link>
+        </div>
+        {/* Chemistry --end */}
       </div>
     </header>
   );
