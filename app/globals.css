@@ -11,6 +11,7 @@
   --primary: #002435;
   --secondary: #003449;
   --shadow: rgba(18, 116, 135, 0.4);
+  --gradient-backgroud: linear-gradient(-45deg, var(--primary) 55%, var(--secondary));
 }
 
 /* Font */
@@ -104,6 +105,28 @@ textarea::placeholder{
 }
 
 textarea:focus{
+  background: var(--secondary);
+}
+input{
+  background: var(--primary);
+  border-radius: 25px;
+  resize: none;
+  padding: 15px 25px;
+  box-shadow: 0px 10px 90px 30px rgba(18, 116, 135, 0.4);
+}
+
+select{
+  background: var(--secondary);
+  border-radius: 20px;
+  padding: 15px 35px;
+  box-shadow: 0px 10px 90px 30px rgba(18, 116, 135, 0.4);
+}
+
+input::placeholder{
+  color: var(--text-hover);
+}
+
+input:focus{
   background: var(--secondary);
 }
 

@@ -1,7 +1,6 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import styles from "./manual.module.css";
+import styles from "../../manual.module.css";
 
 export default function Manual() {
   function showSubManuals(id: string) {
@@ -18,21 +17,11 @@ export default function Manual() {
   return (
     <header>
       <h1 className={styles.heading}>Manual</h1>
+      <h2 className={styles.title} >Area</h2>
       <div className={styles.manuals}>
-        <button
-          onClick={(e) => showSubManuals("maths")}
-          className={styles.manual}
-        >
-          Maths <i className="fa-solid fa-caret-down"></i>
-        </button>
-        <div id="maths" className={styles.subManuals}>
-          <Link href="/manual/s/maths/area" className="button-a">
-            Area
-          </Link>
-        </div>
-        <button className={styles.manual}>
-          Physics <i className="fa-solid fa-caret-down"></i>
-        </button>
+        <Link href="/manual/s/maths/area" className="button-a">
+          Area
+        </Link>
       </div>
     </header>
   );
