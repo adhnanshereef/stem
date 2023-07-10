@@ -42,6 +42,9 @@ export default function Manual() {
           <Link href="/manual/s/chemistry/electronic-configuration" className="button-a">
             Electronic Configuration
           </Link>
+          <Link href="/manual/s/chemistry/subshell-econfiguration" className="button-a">
+            Subshell Electronic Configuration
+          </Link>
         </div>
         {/* Chemistry --end */}
       </div>

@@ -37,7 +37,7 @@ export default function ElectronicConfiguration() {
   return (
     <header className={styles.header}>
       <h1 className={styles.heading}>Manual</h1>
-      <h2 className={styles.title}>Electronic Configurtion</h2>
+      <h2 className={styles.title}>Electronic Configuration</h2>
       <input
         type="number"
         placeholder="Atomic Number of the Element?"
