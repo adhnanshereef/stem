@@ -226,6 +226,13 @@ header {
 
 /* Nav End */
 
+/* by Adhnan */
+.by{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
 .stem-logo {
   margin: -70px 0 -40px 0;
   font-size: 200px;

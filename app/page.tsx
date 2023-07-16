@@ -1,26 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./home.module.css";
-import { redirect } from "next/navigation";
 
 export default function Home() {
-
-  // const goTo = () => {
-  //   redirect('/manual');
-  // }
   return (
     <header>
-      <div className="flex flex-row-reverse items-center width-100">
-        <div>&nbsp;</div>
-        <Link
-          href="https://www.adhnan.me"
-          target="_blank"
-          className="gradient-text-A"
-        >
-          by <br />
-          <i className="fa-brands fa-atlassian"></i>dhnan
-        </Link>
-      </div>
+      
       <Image
         src="/logo.svg"
         alt="Logo"
@@ -48,8 +33,5 @@ export default function Home() {
         </div>
       </div>
     </header>
-    // <header className="flex min-h-screen flex-col items-center justify-between p-24">
-
-    // </header>
   );
 }

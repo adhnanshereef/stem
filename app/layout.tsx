@@ -55,6 +55,15 @@ export default function RootLayout({
             </Link>
           </div>
         </nav>
+        {/* By Adhnan */}
+        <Link
+          href="https://www.adhnan.me"
+          target="_blank"
+          className="gradient-text-A by"
+        >
+          by <br />
+          <i className="fa-brands fa-atlassian"></i>dhnan
+        </Link>
         {children}
       </body>
     </html>
