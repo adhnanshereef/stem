@@ -40,14 +40,14 @@ export default function AreaOfCircle() {
           <br/> 
           r = ${valueFloat / 2} 
           <br/> 
-          π ${valueFloat / 2} ^2 = ${Math.PI * Math.pow(valueFloat / 2, 2)}`;
+          π${valueFloat / 2}<span class="superscript">2</span> = ${Math.PI * Math.pow(valueFloat / 2, 2)}`;
         }
       } else if (type == "radius") {
         if (answer) {
           answer.innerHTML = `
             r = ${valueFloat} 
             <br/> 
-            π ${valueFloat} ^2 = ${Math.PI * Math.pow(valueFloat, 2)}`;
+            π${valueFloat}<span class="superscript">2</span> = ${Math.PI * Math.pow(valueFloat, 2)}`;
         }
       }
     } else {
@@ -60,8 +60,8 @@ export default function AreaOfCircle() {
     <header className={styles.header}>
       <h1 className={styles.heading}>Manual</h1>
       <h2 className={styles.title}>Area of Circle</h2>
-      <h3 className={styles.equation}>Area of Circle = πr^2</h3>
-      <div className="inpSection">
+      <h3 className={styles.equation}>Area of Circle = πr<span className="superscript">2</span></h3>
+      <div className={styles.inpSection}>
         <h4 className={styles.question}>
           Do you have the diameter or the radius of the circle?
         </h4>
@@ -80,7 +80,7 @@ export default function AreaOfCircle() {
         placeholder={placeholder}
         onChange={(e) => setValue(e.target.value)}
       />
-      <h3 className={styles.equation} id="answer"></h3>
+      <h3 className={styles.answer} id="answer"></h3>
     </header>
   );
 }

@@ -6,26 +6,33 @@ export default function ElectronicConfiguration() {
   function electronicConfiguration(atomicNumber: string) {
     var answer = document.getElementById("answer");
     if (atomicNumber) {
-      var an: number = parseFloat(atomicNumber);
-      var ec: string = "";
-      var n: number = 1;
-      var sc: number = 2 * (n * n);
-      while (an > 0) {
-        sc = 2 * (n * n);
-        var s: number = 0;
-        while (sc > 0) {
-          if (an != 0) {
-            s += 1;
-            an--;
+      var an: number = parseInt(atomicNumber);
+      if (an < 100000) {
+        var ec: string = "";
+        var n: number = 1;
+        var sc: number = 2 * (n * n);
+        while (an > 0) {
+          sc = 2 * (n * n);
+          var s: number = 0;
+          while (sc > 0) {
+            if (an != 0) {
+              s += 1;
+              an--;
+            }
+            sc--;
           }
-          sc--;
+          ec += s + ", ";
+          n++;
         }
-        ec += s + ", ";
-        n++;
-      }
-      ec = ec.slice(0, ec.length - 2);
-      if (answer) {
-        answer.innerHTML = ec;
+        ec = ec.slice(0, ec.length - 2);
+        if (answer) {
+          answer.innerHTML = ec;
+        }
+      } else {
+        if (answer) {
+          answer.innerHTML =
+            "Oops! The atomic number you entered exceeds the maximum limit. Please enter a valid atomic number within the allowed range. Keep in mind that there is also no element with such a high atomic number.";
+        }
       }
     } else {
       if (answer) {
@@ -43,7 +50,7 @@ export default function ElectronicConfiguration() {
         placeholder="Atomic Number of the Element?"
         onChange={(e) => electronicConfiguration(e.target.value)}
       />
-      <h3 className={styles.equation} id="answer"></h3>
+      <h3 className={styles.answer} id="answer"></h3>
     </header>
   );
 }

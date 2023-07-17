@@ -43,7 +43,7 @@ export default function AreaOfRectangle() {
         placeholder="Breadth of the Rectangle?"
         onChange={(e)=>setB(e.target.value)}
       />
-      <h3 className={styles.equation} id="answer"></h3>
+      <h3 className={styles.answer} id="answer"></h3>
     </header>
   );
 }
