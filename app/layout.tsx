@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Stem",
-  description: "Science, Technology, Engineering, and Mathematics",
+  description: "Science, Technology, Engineering, and Mathematics. By Adhnan Shereef T",
 };
 
 export default function RootLayout({
