@@ -16,7 +16,7 @@ export default function Manual() {
   }
 
   return (
-    <header>
+    <header className={styles.header} >
       <h1 className={styles.heading}>Manual</h1>
       <div className={styles.manuals}>
         <button

@@ -14,7 +14,7 @@ export default function Home() {
         priority
       ></Image>
       <p className="stem-logo">Stem</p>
-      <div className="flex justify-evenly flex-row width-100">
+      <div className={styles.options}>
         <div className={styles.option}>
           <Link className="button-a" href="/manual" >Manual</Link>
           <h4>What is Manual?</h4>

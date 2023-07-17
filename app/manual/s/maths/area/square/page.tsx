@@ -23,7 +23,7 @@ export default function Manual() {
       <h2 className={styles.title} >Area of Square</h2>
       <h3 className={styles.equation} >Area of square = side x side</h3>
       <input type="number" placeholder="Side of the Square?" onChange={(e)=>areaOfSquare(e.target.value)} />
-      <h3 className={styles.answer} id="answer" ></h3>
+      <h3 className={styles.breakable_answer} id="answer" ></h3>
     </header>
   );
 }

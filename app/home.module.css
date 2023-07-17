@@ -1,4 +1,13 @@
+.options{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 .option{
+    margin: 15px;
     width: 400px;
     display: flex;
     flex-direction: column;

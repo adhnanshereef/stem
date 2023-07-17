@@ -40,6 +40,7 @@
 .equation, .question{
   margin: 10px 0;
   font-size: 15px;
+  text-align: center;
 }
 
 .manuals {
@@ -77,6 +78,11 @@
   margin: 5px 10px;
 }
 
+.breakable_answer{
+  font-size: 20px;
+  text-align: center;
+  word-break: break-all;
+}
 
 .answer{
   font-size: 20px;

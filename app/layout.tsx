@@ -2,13 +2,14 @@ import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
-import Script from 'next/script';
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Stem",
-  description: "Science, Technology, Engineering, and Mathematics. By Adhnan Shereef T",
+  description:
+    "Science, Technology, Engineering, and Mathematics. By Adhnan Shereef T",
 };
 
 export default function RootLayout({
@@ -19,6 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Metadata */}
+        <meta
+          name="google-site-verification"
+          content="EZc421c2qzZii6OLjRd8RwtD-tmx_aGNqK9xRILeam0"
+        />
         {/* <!-- Font Awesome --start */}
         <link
           rel="stylesheet"
@@ -56,14 +62,16 @@ export default function RootLayout({
           </div>
         </nav>
         {/* By Adhnan */}
-        <Link
-          href="https://www.adhnan.me"
-          target="_blank"
-          className="gradient-text-A by"
-        >
-          by <br />
-          <i className="fa-brands fa-atlassian"></i>dhnan
-        </Link>
+        <div className="by">
+          <Link
+            href="https://www.adhnan.me"
+            target="_blank"
+            className="gradient-text-A"
+          >
+            by <br />
+            <i className="fa-brands fa-atlassian"></i>dhnan
+          </Link>
+        </div>
         {children}
       </body>
     </html>
