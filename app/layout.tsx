@@ -1,15 +1,15 @@
 import "./globals.css";
-import Image from "next/image";
 import Link from "next/link";
-import { Inter } from "next/font/google";
+import Image from "next/image";
 import Script from "next/script";
+import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Stem",
   description:
-    "Science, Technology, Engineering, and Mathematics. By Adhnan Shereef T",
+    "Stem, created by Adhnan Shereef T, is a powerful app offering a wealth of knowledge in Science, Technology, Engineering, and Mathematics. Utilize our prompt-based chatbot and manual input options to effortlessly explore concepts, perform calculations, and find accurate solutions. Enhance your understanding and excel in STEM fields with ease",
 };
 
 export default function RootLayout({
@@ -37,8 +37,6 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></Script>
         {/* <!-- Font Awesome --end */}
-        {/* Icon */}
-        <link rel="icon" href="/logo.svg" type="image/x-icon" />
       </head>
       <body className={inter.className}>
         <nav className="nav">

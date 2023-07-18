@@ -5,7 +5,6 @@ import styles from "./home.module.css";
 export default function Home() {
   return (
     <header>
-      
       <Image
         src="/logo.svg"
         alt="Logo"
@@ -16,19 +15,25 @@ export default function Home() {
       <p className="stem-logo">Stem</p>
       <div className={styles.options}>
         <div className={styles.option}>
-          <Link className="button-a" href="/manual" >Manual</Link>
+          <Link className="button-a" href="/manual">
+            Manual
+          </Link>
           <h4>What is Manual?</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in
-            blanditiis quia corrupti dolore mollitia. Eos maxime illo ipsum
+            Take control with dedicated input boxes. Customize calculations and
+            experiments by entering values, manipulating variables, and
+            exploring different scenarios to obtain precise results.
           </p>
         </div>
         <div className={styles.option}>
-          <Link className="button-a" href="/prompt"  >Prompt</Link>
+          <Link className="button-a" href="/prompt">
+            Prompt
+          </Link>
           <h4>What is Prompt?</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in
-            blanditiis quia corrupti dolore mollitia. Eos maxime illo ipsum
+            Engage with a chatbot-like interface to explore math, science, tech,
+            and engineering. Ask questions naturally and receive instant,
+            informative responses tailored to your queries.
           </p>
         </div>
       </div>
