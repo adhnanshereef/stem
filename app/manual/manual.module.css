@@ -30,6 +30,11 @@
   padding: 10px;
 }
 
+.des{
+  text-align: center;
+  margin-top: 10px;
+}
+
 .inpSection{
   display: flex;
   flex-direction: column;

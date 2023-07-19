@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import styles from "../../../manual.module.css";
 
 export default function SubshellElectronicConfiguration() {
@@ -16,8 +15,14 @@ export default function SubshellElectronicConfiguration() {
       let n: number = 1;
       let balance: Array<BalanceObj> = [];
       if (an < 100000) {
+        if (an < 1) {
+          if (answer) {
+            answer.innerHTML =
+              "Atomic numbers represent the number of protons in an atom's nucleus. Since atoms cannot have a negative or zero atomic number, the subshell electronic configuration cannot be determined. Please enter an atomic number greater than or equal to 1.";
+          }
+        }
         // Define the stable ones
-        if (an == 24) {
+        else if (an == 24) {
           if (answer) {
             answer.innerHTML =
               "The electron configuration of chromium is 1s<span class='superscript' >2</span> 2s<span class='superscript' >2</span> 2p<span class='superscript' >6</span> 3s<span class='superscript' >2</span> 3p<span class='superscript' >6</span> 4s<span class='superscript' >1</span>  3d<span class='superscript' >5</span>. This configuration is different from what one might expect based on the order of filling of the 3d and 4s orbitals. Normally, electrons fill the 4s orbital before moving to the 3d orbital. However, in the case of chromium, one electron from the 4s orbital moves to the 3d orbital, resulting in a half-filled 3d subshell. This arrangement is more stable due to the exchange energy associated with electron-electron interactions in the subshell.";
@@ -116,9 +121,10 @@ export default function SubshellElectronicConfiguration() {
             answer.innerHTML = s;
           }
         }
-      }else{
+      } else {
         if (answer) {
-          answer.innerHTML = "Oops! The atomic number you entered exceeds the maximum limit. Please enter a valid atomic number within the allowed range. Keep in mind that there is also no element with such a high atomic number.";
+          answer.innerHTML =
+            "Oops! The atomic number you entered exceeds the maximum limit. Please enter a valid atomic number within the allowed range. Keep in mind that there is also no element with such a high atomic number.";
         }
       }
     } else {
@@ -132,6 +138,12 @@ export default function SubshellElectronicConfiguration() {
     <header className={styles.header}>
       <h1 className={styles.heading}>Stem</h1>
       <h2 className={styles.title}>Subshell Electronic Configuration</h2>
+      <p className={styles.des} >
+        The Subshell Electronic Configuration in Stem calculates the subshell
+        electronic configuration for any atom based on its atomic number. Simply
+        input the atomic number, and the generator will provide you the subshell
+        electronic configuration.
+      </p>
       <input
         type="number"
         placeholder="Atomic Number of the Element?"
