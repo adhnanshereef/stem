@@ -89,6 +89,13 @@
   word-break: break-all;
 }
 
+.what{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  margin: 15px 0;
+}
+
 .answer{
   font-size: 20px;
   text-align: center;
