@@ -130,7 +130,7 @@ export async function generateMetadata({
   const atomicNumber = params.atomic_number;
   await subshellelectronicConfiguration(atomicNumber);
   return {
-    
+    metadataBase: new URL('https://stem.adhnan.me'),
     title: `Subshell Electronic Configuration of the element with atomic number ${atomicNumber} | Stem`,
     description: `${answer}`,
     openGraph: {
