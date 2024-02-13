@@ -22,6 +22,9 @@ export default function Manual() {
         <Link href="/manual/s/maths/area" className="button-a">
           Area
         </Link>
+        <Link href="/manual/s/maths/second-degree" className="button-a">
+          Second Degree Equation
+        </Link>
       </div>
     </header>
   );

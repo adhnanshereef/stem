@@ -16,7 +16,7 @@ export default function Manual() {
   }
 
   return (
-    <header className={styles.header} >
+    <header className={styles.header}>
       <h1 className={styles.heading}>Manual</h1>
       <div className={styles.manuals}>
         <button
@@ -29,20 +29,32 @@ export default function Manual() {
           <Link href="/manual/s/maths/area" className="button-a">
             Area
           </Link>
+          <Link href="/manual/s/maths/second-degree" className="button-a">
+            Second Degree Equation
+          </Link>
         </div>
         <button className={styles.manual}>
           Physics <i className="fa-solid fa-caret-down"></i>
         </button>
 
         {/* Chemistry --start */}
-        <button onClick={(e) => showSubManuals("chemistry")} className={styles.manual}>
+        <button
+          onClick={(e) => showSubManuals("chemistry")}
+          className={styles.manual}
+        >
           Chemistry <i className="fa-solid fa-caret-down"></i>
         </button>
         <div id="chemistry" className={styles.subManuals}>
-          <Link href="/manual/s/chemistry/electronic-configuration" className="button-a">
+          <Link
+            href="/manual/s/chemistry/electronic-configuration"
+            className="button-a"
+          >
             Electronic Configuration
           </Link>
-          <Link href="/manual/s/chemistry/subshell-econfiguration" className="button-a">
+          <Link
+            href="/manual/s/chemistry/subshell-econfiguration"
+            className="button-a"
+          >
             Subshell Electronic Configuration
           </Link>
         </div>
