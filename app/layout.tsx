@@ -21,10 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Metadata */}
-        <meta
-          name="google-site-verification"
-          content="EZc421c2qzZii6OLjRd8RwtD-tmx_aGNqK9xRILeam0"
-        />
+       <meta name="google-site-verification" content="4K0M8Lm73ccqmYGe54vgkf9wOHcgetUxLjBYQfkWA4w" />
         {/* <!-- Font Awesome --start */}
         <link
           rel="stylesheet"
