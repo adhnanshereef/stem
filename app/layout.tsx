@@ -59,7 +59,7 @@ export default function RootLayout({
         {/* By Adhnan */}
         <div className="by">
           <Link
-            href="https://www.adhnan.me"
+            href="https://www.adhnan.tech"
             target="_blank"
             className="gradient-text-A"
           >
